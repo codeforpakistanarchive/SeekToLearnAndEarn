@@ -1,0 +1,294 @@
+	/* header page includes logo and nav_index */
+	.logo
+	{
+		height: 120px;
+		width: 120px;
+		margin-top: 1%;
+		display: block;
+		margin-left: 20px;
+	}
+
+	.nav_index
+	{
+		background-color: 6b482c;
+		text-align: center;
+		color:white;
+	}
+
+	a.nav_index
+	{
+		text-decoration: none;
+	}
+
+	a.nav_index:hover
+	{
+		color:white;
+	}
+
+	a.nav_index:active
+	{
+		color:white;
+	}
+	/* ends for header */
+
+	
+
+	.body
+	{
+		background: url('../upload/2.jpg');
+	}
+
+
+	/* chatroom, contactus, home */
+	.content_index
+	{
+		min-height: 55%;
+		background-color: black;
+		border-style: outset;
+		border-color: grey;
+		border-width: 2px;
+		margin-top: 10%;
+		margin-bottom: 10%;
+		margin-left: 4%;
+		background: rgba(0, 0, 0, 0.7);		
+	}
+
+
+	/* home */
+	.font_index
+	{
+		padding-bottom: 10%;
+		padding-left: 13%;
+		margin-right: 4%;
+		color:white;
+		word-spacing: 10px;
+		text-indent: 10px;
+		font-family: verdana,Geneva,Sans-sarif;
+		text-align: justify;
+	}
+	
+	/* home , updatepage , contactus , chatroom , catogories , sports , profile , show_questions */
+	.wellcome_index
+	{
+		font-size: 35;
+		font-family:  times, serif; 
+		color:white;
+	}
+
+
+	/* chatroom */
+	.wellcome_signup
+	{
+		font-size: 35;
+		font-family: verdana,Geneva,Sans-sarif;
+		color:2b488c;
+		padding-left: 31%;
+	}
+
+	
+	/* home */
+	.content1_index
+	{
+		font-size: 25;
+		font-family:  verdana,Geneva,Sans-sarif;
+		color: aaaaab;
+	}
+
+
+	/* contactus */
+	.content1_contactus
+	{
+		font-size: 20;
+		font-family:  verdana,Geneva,Sans-sarif;
+		margin-left: 15%;
+		color:white;
+	}
+
+
+	/* chatroom */
+	.login_chatroom
+	{
+		
+		padding-top: 1%;
+	}
+
+	.signup_chatroomright
+	{
+		padding-left: 4%;
+		padding-top: 1%;
+		color:black;
+	}
+
+	.signup_chatroomleft
+	{
+		border-right:1px dotted;
+		padding-left: 20%;
+		padding-top: 1%;
+		color:black;
+	}
+	/* chatroom */
+
+	.color
+	{
+		color: white;
+	}
+
+	/* sports , show_questions */
+	.content_sports
+	{
+		min-height: 55%;
+		background-color:6b482c;
+		border-style: solid;
+		border-color: grey;
+		border-width: 1px;
+		margin-top: 0%;
+		margin-bottom: 10%;
+		margin-left: 4%;
+
+	}
+
+	/* sports */
+	.table_sports
+	{
+		margin-left: 1%;
+		padding-left: 2%;
+		border-style: solid;
+		border-width: 3px;
+		border-radius: 10px 10px 1px 1px;
+		min-height: 10%;
+		max-width: 900px;
+	}
+
+	a.sports
+	{
+		text-decoration: none;
+		font-size: 20;
+	}
+
+	a.sports:hover
+	{
+		text-decoration: none;
+		font-size: 21;
+		color: 91cadd;
+	}
+	/* sports */
+
+
+	/* show_questions */
+	.table_answer
+	{
+		margin-left: 1%;
+		padding-left: 2%;
+		border-style: solid;
+		border-width: 3px;
+		border-radius: 10px 10px 1px 1px;
+		min-height: 12%;
+		max-width: 1010px;
+		margin-top: 1%;
+
+	}
+
+
+	/* catogories */	
+	a.catogories
+	{
+		text-decoration: none;
+		font-size: 20;
+		color: white;
+
+	}
+
+	a.catogories:hover
+	{
+		color: 91cadd;
+		font-size: 22;
+	}
+
+
+	/* show_questions */
+	.table_answer1
+	{
+		margin-left: 1%;
+		padding-left: 2%;
+		border-style: solid;
+		border-width: 1px;
+		border-color: white;
+		border-radius: 10px 10px 1px 1px;
+		min-height: 12%;
+		max-width: 1010px;
+		margin-top: 1%;
+
+
+	}
+
+	/* show_questions, sports, updatepage, profile, catogories */
+	.banner2
+	{
+		background-color: black;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		color:white;
+		margin-top: 10%;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	a.banner2
+	{
+		font-size: 14px;
+		text-decoration: none;
+		font-family:  verdana,Geneva,Sans-sarif;
+		color:white; 
+	}
+
+	.banner3
+	{
+		background-color:  6b482c;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		color:white;
+		margin-top: 10%;
+	}
+	a.banner3
+	{
+		text-decoration: none;
+	}
+
+	
+
+	/* profile, updatepage , catogories */
+	.content_after_login
+	{
+		min-height: 55%;
+		background-color: black;
+		border-style: outset;
+		border-color: grey;
+		border-width: 1px;
+		margin-top: 0px;
+		margin-bottom: 10%;
+		margin-left: 4%;
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+	}
+
+	.footer
+	{
+		background-color: 6b482c;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		color:white;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	.answer_font
+	{
+		font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+		color: d6ddef;
+	}
+
+	.question_font
+	{
+		font-family: Arial black;
+		font-style: bold;
+		color: white;
+	}
+}
