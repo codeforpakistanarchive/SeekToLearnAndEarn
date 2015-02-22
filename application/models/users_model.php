@@ -177,54 +177,6 @@
 				return false;
 		}
 
-		public function portifolio_data($file_name)
-		{
-			$id=$this->session->userdata('user_id');
-			$name=$this->session->userdata('username');
-			
-			$skill		= $this->input->post('skill');
-			$description=$this->input->post('description');
-			//$userfile	=$this->input->post('userfile');
-
-			$data      =array('skill' =>$skill, 'description' =>$description, 'user_id' =>$id, 'name' =>$name, 
-							   'image'=>$file_name);
-
-			if($this->db->insert('portifolio_data',$data))
-				return true;
-			else
-				return false;
-		}
-
-		public function portifolio_location($latitude, $longitude)
-		{
-			$id=$this->session->userdata('user_id');
-
-			//$latitude		= $this->input->post('latitude');
-			//$longitude		=$this->input->post('longitude');
-
-			$this->db->where('id',$id);
-
-			$data =  array('latitude' =>$latitude , 'longitude' => $longitude );
-			if($this->db->update('portifolio_data',$data))
-			{
-				return true;
-			}
-			else
-			{
-				echo "database not updated";
-			}
-
-
-		}
-
-		public function show_portifolio_new()
-		{
-			$id=$this->session->userdata('user_id');
-			$this->db->where('id', $id);
-			$q=$this->db->get('portifolio_data');
-			return $q->result();
-		}
-
 	
 
 	}

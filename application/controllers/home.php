@@ -32,7 +32,7 @@ class Home extends CI_Controller
 	public function login()
 	{
 		$option = $this->input->post("option");
-		
+		echo $option;
 		if($this->users_model->login_model())
 		{
 			
@@ -43,7 +43,7 @@ class Home extends CI_Controller
 			
 			elseif ($option == 'E' || $option == 'e') 
 			{
-				redirect('home/show_portifolio');
+				redirect('home/portifolio');
 			}
 			
 		}
@@ -502,85 +502,12 @@ class Home extends CI_Controller
 
 	public function portifolio_data()
 	{
-		$log=$this->session->userdata('logged_in');
-
+		$latitude 	= $this->input->get('latitude');
+		$longitude	= $this->input->get('longitude');
 		$skill		= $this->input->post('skill');
 		$description=$this->input->post('description');
 		$userfile	=$this->input->post('userfile');
-
-		$config['upload_path']='./upload';
-		$config['allowed_types']='gif|jpg|png|jpeg';
-		$config['max_size']='1000000000';
-
-
-		$this->load->library('upload',$config);
-			
-		if ($this->upload->do_upload()) 
-		{
-			$file_data=$this->upload->data();
-			if($this->users_model->portifolio_data($file_data['file_name']))
-			{
-				//redirect('home/portifolio');
-				echo "uploaded";
-			}
-			else
-			{
-				echo "some problem";
-			}
-					
-		}
-				
-		else
-		{
-				
-			$data=$this->upload->display_errors();
-			print_r($data);
-		}
 	}
-
-	public function portifolio_data1()
-	{
-		$log=$this->session->userdata('logged_in');
-
-		$latitude		= $this->input->get("Latitude");
-		$longitude		= $this->input->get("Longitude");
-
-		if($this->users_model->portifolio_location($latitude, $longitude))
-			redirect('home/portifolio');
-		else
-			echo "some error";
-	}
-
-	public function show_portifolio()
-	{
-		$log=$this->session->userdata('logged_in');
-		
-		if($log==True)
-		{
-			
-
-			$this->db->where('id',$log);
-			$q=$this->db->get('signup');
-			$data['info']=$q->result();
-
-
-			$this->db->where('id',$log);
-			$q=$this->db->get('portifolio_data');
-			$data['result']=$q->result();
-
-			$this->load->view('header');
-			$this->load->view('show_portifolio',$data);
-			$this->load->view('footer');
-		}
-		else
-		{
-			redirect('home/chatroom');
-		}
-	}
-
-
-
-
 
 }
 ?>

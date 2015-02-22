@@ -36,7 +36,7 @@ function placeMarker(location) {
     content: 'Latitude: ' + location.lat() + '<br>Longitude: ' + location.lng()
   });
   infowindow.open(map,marker);
-  window.location = "<?php echo base_url() ?>home/portifolio_data1?Latitude=" + location.lat() + "&Longitude="+ location.lng();
+  window.location = "distance_cal.php?Latitude=" + location.lat() + "&Longitude="+ location.lng();
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);

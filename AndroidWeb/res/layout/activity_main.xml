@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="@drawable/splash" >
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="615px"
+        android:textColor="#800000"
+        android:text="@string/hello_world"
+        android:textSize="27px" 
+        android:paddingRight="5px"/>
+   
+    <Button
+        android:id="@+id/buttonUrl"
+        android:layout_width="fill_parent"
+        android:layout_height="80px"
+        android:background="#000000"
+        android:textColor="#FFFFFF"
+        android:text="SeekToLearn" />   
+    
+</LinearLayout>
